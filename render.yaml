@@ -9,7 +9,7 @@ services:
       targetMemoryPercent: 60 # optional if targetCPUPercent is set
       targetCPUPercent: 60 # optional if targetMemory is set
     buildCommand: pip install -r requirements.txt
-    startCommand: python -m app
+    startCommand: uvicorn app:app
     domains:
       - render-test-deploy-sid.render.com
     envVars:
