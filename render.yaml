@@ -11,7 +11,7 @@ services:
     buildCommand: pip install -r requirements.txt
     startCommand: python -m app
     domains:
-      - test-render-com-repo.render.com
+      - render-test-deploy-sid.render.com
     envVars:
       - key: OPENAI_API_KEY
         value: sk-xxx
