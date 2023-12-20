@@ -5,6 +5,7 @@ from embedchain import Pipeline
 
 app = FastAPI(title="Embedchain FastAPI App")
 embedchain_app = Pipeline()
+embedchain_app.collect_metrics = False
 
 
 class SourceModel(BaseModel):
